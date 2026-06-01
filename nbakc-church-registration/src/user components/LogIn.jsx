@@ -2,7 +2,7 @@ import { GoogleLogin } from "@react-oauth/google";
 
 const LogIn = () => {
     return(
-        <div>
+        <div className="google-button">
             <GoogleLogin
             onSuccess={(credentialResonse) => {
                     console.log(credentialResonse)
