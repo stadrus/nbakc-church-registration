@@ -6,6 +6,7 @@ import {GoogleOAuthProvider} from '@react-oauth/google'
 
 
 const CLIENT_ID = import.meta.env.VITE_CLIENT_ID;
+console.log("CLIENT-ID:", CLIENT_ID)
 
 
 createRoot(document.getElementById('root')).render(
