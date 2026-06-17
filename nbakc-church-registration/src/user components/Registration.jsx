@@ -10,8 +10,8 @@ const Registration = () => {
     }
 
     return (
-        <div>
-            <h2>What brings you to church today?</h2>
+        <div className="registration">
+            <h2 className="visitor-greeting">What brings you to church today?</h2>
             <button className="new-visitor-button" onClick={openVisitorForm}>New Visitor </button>
             <button className="food-pantry-button" onClick={openFoodPantryForm}>Food Pantry</button>
         </div>

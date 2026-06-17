@@ -3,8 +3,9 @@ import HeroImg from "../assets/hero.png"
 
 const Header = () => {
     return (
-        <div>
+        <div className="header">
             <img src={HeroImg} alt="header-logo" width={100}></img>
+            <LogIn />
         </div>
     );
 }
