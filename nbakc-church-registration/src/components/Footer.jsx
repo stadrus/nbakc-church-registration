@@ -1,7 +1,9 @@
 const Footer = () => {
     return (
         <div>
-            <h1>Footer</h1>
+            <footer>
+            <p> &#x00A9; NEW BEGINNING APOSTOLIC CHURCH KANSAS CITY, MO</p>
+            </footer>
         </div>
     );
 }

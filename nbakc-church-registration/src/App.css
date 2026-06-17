@@ -1,0 +1,155 @@
+#root{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+body{
+    min-height: 100vh;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: transparent;
+    background-color: #ab8115;
+}
+
+.google-button{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.welcome-img {
+    position: relative;
+    inset: 0;
+    margin-top: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+
+}
+.registration{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    z-index: 10;
+}
+
+.visitor-greeting{
+    color: aliceblue;
+    font-family: sans-serif;
+    font-size: x-large;
+    line-height: 1.6;
+    text-shadow: 2px 2px 5px black;
+    border: 2px solid;
+    background-color: black;
+    border-radius: 6px;
+    padding: 8px 12px;
+    display: inline-block;
+    z-index: 10;
+}
+button{
+    margin: 10px;
+    padding: 10px 20px;
+    align-items: center;
+  appearance: none;
+  background-color: black;
+  border-radius: 24px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+  box-sizing: border-box;
+  color:white;
+  cursor: pointer;
+  display: inline-flex;
+  fill: currentcolor;
+  font-family: "Google Sans",Roboto,Arial,sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  height: 48px;
+  letter-spacing: .25px;
+  line-height: normal;
+  max-width: 100%;
+  overflow: visible;
+  padding: 2px 24px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+  will-change: transform,opacity;
+  z-index: 0;
+}
+button:hover{
+    background-color: #ab8115;
+}
+
+.logout-button{
+    float: right;
+    margin-left: 10px;
+}
+.google-sheets{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    width: 100%;
+    margin-top: 2rem;
+    padding: 1rem;
+    
+}
+footer{
+    margin-top: auto;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    background-color: #ab8115;
+}
+.admin-page{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+@media (max-width: 768px) {
+    .header{
+        flex-direction: column;
+    }
+    .welcome-img {
+       padding: 2rem 1rem;
+    }
+    .registration{
+        top: 75%;
+    }
+    
+    
+}
+
+@media (max-width: 480px){
+
+    .welcome-img {
+        justify-content: flex-start;
+        padding-top: 4rem;
+    }
+    .visitor-greeting{
+        font-size: 1.5rem;
+    }
+    .registration{
+        width: 70%;
+        top: 2%;
+        align-items: center;
+        text-align: center;
+    }
+}
