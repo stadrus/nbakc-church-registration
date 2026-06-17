@@ -10,8 +10,8 @@ const GoogleSheets = () => {
     }
 
     return (
-        <div className="sheet-buttons">
-            <h2>Google Sheets</h2>
+        <div className="google-sheets">
+            <h2 className="google-sheets-title">Google Sheets</h2>
             <button className="new-visitor-sheet-button" onClick={openVisitorSheet}>Todays Visitors </button>
             <button className="food-pantry-sheet-button" onClick={openFoodPantrySheet}>Food Pantry Registry</button>
         </div>

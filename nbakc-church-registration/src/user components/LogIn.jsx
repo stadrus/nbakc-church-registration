@@ -10,10 +10,21 @@ const LogIn = () => {
         <div className="google-button">
             <GoogleLogin
             onSuccess={(credentialResponse) => {
+                const user = jwtDecode(credentialResponse.credential);
+                localStorage.setItem("userName", user.name);
+                localStorage.setItem("userEmail", user.email);
+                localStorage.setItem("isAuthenticated", "true");
                 console.log(jwtDecode(credentialResponse.credential))
                 navigate('/Admin');
                 }}
-            onError ={() => console.log("Log in failed")}>
+            onError ={() => console.log("Log in failed")}
+            theme="filled_blue"
+            size="large"
+            shape="pill"
+            text="signin_with"
+            width="100">
+            
+            
             </GoogleLogin>
         </div>
             
