@@ -3,7 +3,7 @@ import Registration from "../user components/Registration";
 
 const Home = () => {
     return (
-        <div className="home">
+        <div className="home-page">
             <img className= "welcome-img" src={WelcomeImg} alt="home-Img"></img>
             <Registration />
         </div>

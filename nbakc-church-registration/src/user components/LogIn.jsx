@@ -22,7 +22,7 @@ const LogIn = () => {
             size="large"
             shape="pill"
             text="signin_with"
-            width="300">
+            width="100">
             
             
             </GoogleLogin>
